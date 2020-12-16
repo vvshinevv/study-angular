@@ -5,13 +5,15 @@ import { FormsModule } from '@angular/forms';
 import { FirstComponent } from './first/first.component';
 import { AppComponent } from './app.component';
 import { GotcharacterComponent } from './gotcharacter/gotcharacter.component';
+import { DirectiveExampleComponent } from './directive-example/directive-example.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    GotcharacterComponent
+    GotcharacterComponent,
+    DirectiveExampleComponent
   ],
   imports: [
     BrowserModule,
