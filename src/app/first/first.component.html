@@ -1,0 +1,16 @@
+<h2>{{ returnString() }}</h2>
+<h2>1+1={{ 1+1 }}</h2>
+
+<hr>
+
+<img [src]="imageUrl" alt="">
+<img src="{{ imageUrl }}" alt="">
+<hr>
+
+<h1>{{ headingTwo }}</h1>
+<!-- event binding -->
+<button type="button" name="button" (click)="changeValue()" >Change Value</button> 
+
+
+
+<app-gotcharacter [imageUrlChild]="imageUrl"></app-gotcharacter>
