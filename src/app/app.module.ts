@@ -6,6 +6,7 @@ import { FirstComponent } from './first/first.component';
 import { AppComponent } from './app.component';
 import { GotcharacterComponent } from './gotcharacter/gotcharacter.component';
 import { DirectiveExampleComponent } from './directive-example/directive-example.component';
+import { AppBoldDirective } from './app-bold.directive';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { DirectiveExampleComponent } from './directive-example/directive-example
     AppComponent,
     FirstComponent,
     GotcharacterComponent,
-    DirectiveExampleComponent
+    DirectiveExampleComponent,
+    AppBoldDirective
   ],
   imports: [
     BrowserModule,
