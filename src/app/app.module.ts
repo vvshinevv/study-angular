@@ -11,6 +11,7 @@ import { AppBoldDirective } from './app-bold.directive';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
+import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 
 const ROUTES: Routes = [
   {path: '', component: HomeComponent},
@@ -27,7 +28,8 @@ const ROUTES: Routes = [
     AppBoldDirective,
     HomeComponent,
     AboutComponent,
-    BlogComponent
+    BlogComponent,
+    TemplateDrivenComponent
   ],
   imports: [
     BrowserModule,
