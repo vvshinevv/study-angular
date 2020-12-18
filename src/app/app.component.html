@@ -7,11 +7,34 @@
             <h1 style.color="#185196" class="text-primary">Angular Tutorial: Routing</h1>
         </div>
     </div>
-    
+    <hr>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/" class="nav-link">HOME</a></li>
+                <li class="nav-item" routerLinkActive="active"><a routerLink="/blog" class="nav-link">BLOG</a></li>
+                <li class="nav-item" routerLinkActive="active"><a routerLink="/about" class="nav-link">ABOUT</a></li>
+            </ul>
+        </div>
+    </nav>
 </div>
-<hr>
-<br>
-<br>
+<div>
+    <router-outlet></router-outlet>
+</div>
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+
 <app-directive-example></app-directive-example>
 <br>
 <h1>I am AppComponent - Bring a change</h1>
