@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Routes, RouterModule } from '@angular/router';
 
 import { FirstComponent } from './first/first.component';
 import { AppComponent } from './app.component';
@@ -10,7 +11,13 @@ import { AppBoldDirective } from './app-bold.directive';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
+import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 
+const ROUTES: Routes = [
+  {path: '', component: HomeComponent},
+  {path: 'blog', component: BlogComponent},
+  {path: 'about', component: AboutComponent}
+]
 
 @NgModule({
   declarations: [
@@ -21,11 +28,13 @@ import { BlogComponent } from './blog/blog.component';
     AppBoldDirective,
     HomeComponent,
     AboutComponent,
-    BlogComponent
+    BlogComponent,
+    TemplateDrivenComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(ROUTES)
   ],
   providers: [],
   bootstrap: [AppComponent]
