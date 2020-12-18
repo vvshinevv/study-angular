@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { GotcharacterComponent } from './gotcharacter/gotcharacter.component';
 import { DirectiveExampleComponent } from './directive-example/directive-example.component';
 import { AppBoldDirective } from './app-bold.directive';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 @NgModule({
@@ -15,7 +18,10 @@ import { AppBoldDirective } from './app-bold.directive';
     FirstComponent,
     GotcharacterComponent,
     DirectiveExampleComponent,
-    AppBoldDirective
+    AppBoldDirective,
+    HomeComponent,
+    AboutComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
