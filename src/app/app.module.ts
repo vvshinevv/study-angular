@@ -13,6 +13,8 @@ import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import { ListComponent } from './list/list.component';
+import { DataService } from './data.service';
 
 const ROUTES: Routes = [
   {path: '', component: HomeComponent},
@@ -31,7 +33,8 @@ const ROUTES: Routes = [
     AboutComponent,
     BlogComponent,
     TemplateDrivenComponent,
-    ReactiveFormsComponent
+    ReactiveFormsComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,9 @@ const ROUTES: Routes = [
     ReactiveFormsModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [
+    DataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
